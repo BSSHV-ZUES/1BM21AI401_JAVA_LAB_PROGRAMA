@@ -3,25 +3,19 @@ Animal.java
 public abstract class Animal {
     protected int legs;
 
-    /**
-     * constructor
-     */
+   
     protected Animal(int legs) {
         super();
         this.legs = legs;
     }
 
-    /**
-     * default constructor
-     */
+
     protected Animal() {
         this.legs = 0;
     }
 
-    // abstract method
     public abstract void eat();
 
-    // walk method
     public void walk() {
         System.out.println("Animal is walking using " + legs + " legs");
     }
@@ -32,9 +26,7 @@ Spider.java
 
 public class Spider extends Animal {
 
-    /**
-     * default constructor
-     */
+   
     protected Spider() {
         super(8);
     }
@@ -60,19 +52,12 @@ Cat.java
 public class Cat extends Animal implements Pet {
     public String name;
 
-    /**
-     * constructor
-     * 
-     * @param name
-     */
+    
     protected Cat(String name) {
         super(4);
         this.name = name;
     }
-
-    /**
-     * default constructor
-     */
+/
     protected Cat() {
         this("");
     }
