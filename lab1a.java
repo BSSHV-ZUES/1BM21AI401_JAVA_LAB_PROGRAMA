@@ -4,11 +4,8 @@ import java.util.Scanner;
 
  
 
-//class declaration
 
 public class RetailItem {
-
-     // variable declaration
 
      private String description;
 
@@ -18,7 +15,6 @@ public class RetailItem {
 
  
 
-     // default constructor
 
      public RetailItem()
 
@@ -30,7 +26,6 @@ public class RetailItem {
 
  
 
-     //parameterized constructor
 
      public RetailItem(String x, int y, double z)
 
@@ -46,7 +41,6 @@ public class RetailItem {
 
     
 
-     //mutator method implementation
 
      public void setDescription(String x)
 
@@ -74,7 +68,6 @@ public class RetailItem {
 
  
 
-     //accessor methods
 
      public int getUnits()
 
@@ -108,7 +101,6 @@ public class RetailItem {
 
     
 
-     //Main class
 
      public static void main(String[] args)
 
@@ -134,15 +126,12 @@ RetailItem r2 = new RetailItem("watches", 40, 6000);
 
  
 
-//print the output
-
 
 System.out.println("Description\tUnits on Hand\tPrice\t\n");
 
 
  
 
-//call the get methods and diplay it
 
 System.out.println("1\t" + r1.getDescription() + "\t\t" + r1.getUnits() + " \t" + r1.getPrice());
 
