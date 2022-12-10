@@ -1,4 +1,4 @@
-Animal.java
+//Animal.java
 
 public abstract class Animal {
     protected int legs;
@@ -22,7 +22,7 @@ public abstract class Animal {
 
 }
 
-Spider.java
+//Spider.java
 
 public class Spider extends Animal {
 
@@ -39,7 +39,7 @@ public class Spider extends Animal {
 
 }
 
-Pet.java
+//Pet.java
 
 public interface Pet {
     public String getNaame();
@@ -47,7 +47,7 @@ public interface Pet {
     public void play();
 }
 
-Cat.java
+//Cat.java
 
 public class Cat extends Animal implements Pet {
     public String name;
@@ -86,7 +86,7 @@ public class Cat extends Animal implements Pet {
 
 }
 
-Fish.java
+//Fish.java
 
 public class Fish extends Animal implements Pet {
 
@@ -117,7 +117,7 @@ public class Fish extends Animal implements Pet {
     }
 }
 
-TestAnimals.java
+//TestAnimals.java
 
 public class TestAnimals {
 
@@ -129,7 +129,6 @@ public class TestAnimals {
         Animal e = new Spider();
         Pet p = new Cat();
 
-        // call all methods
         d.eat();
         d.play();
         d.walk();
@@ -151,7 +150,6 @@ public class TestAnimals {
         p.setName("Ponnu");
         System.out.println("Cat Name: " + p.getNaame());
 
-        // Casting objects
         Fish fish = (Fish) a;
         Spider spider = (Spider) e;
         Cat cat = (Cat) p;
